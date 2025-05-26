@@ -1,0 +1,11 @@
+streamlit==1.44.0
+langchain==0.3.21
+langchain-groq==0.3.2
+faiss-cpu==1.10.0
+langchain-huggingface==0.1.2
+python-dotenv==1.1.0
+langchain-community==0.3.20
+pypdf==5.4.0
+docx==0.2.4
+deep-translator==1.9.1
+langchain-google-genai==2.0.10
