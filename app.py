@@ -14,8 +14,8 @@ import shutil
 load_dotenv()
 
 #in the streamlit application we have to get the api key
-google_api_key = st.secrets('GOOGLE_API_KEY')  # Use Streamlit secrets for securit
-groq_api_key=st.secrets('GROQ_API_KEY')  # Use Streamlit secrets for security
+google_api_key = st.secrets['GOOGLE_API_KEY']  # Use Streamlit secrets for securit
+groq_api_key=st.secrets['GROQ_API_KEY']  # Use Streamlit secrets for security
 # Constants
 DB_PATH = "text_database"
 MODEL_NAME = "BAAI/bge-base-en-v1.5"
