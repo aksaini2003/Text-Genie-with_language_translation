@@ -44,7 +44,7 @@ def get_text_chunks(text):
 def store_text_to_vector_db(text):
     chunks = get_text_chunks(text)
     
-    embedding_model = GoogleGenerativeAIEmbeddings(model='models/gemini-embedding-2-preview',api_key=google_api_key)
+    embedding_model = GoogleGenerativeAIEmbeddings(model='models/gemini-embedding-2-preview',google_api_key=google_api_key)
     # embedding_model = HuggingFaceEmbeddings(model_name=MODEL_NAME, encode_kwargs={"normalize_embeddings": True})
     vectordb = FAISS.from_texts(texts=chunks, embedding=embedding_model)
     vectordb.save_local(DB_PATH)
