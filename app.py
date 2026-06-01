@@ -21,7 +21,7 @@ CHUNK_OVERLAP = 300
 MAX_SUMMARY_WORDS = 8000
 
 # ✅ FIX 2: Use ONE consistent embedding model everywhere
-EMBEDDING_MODEL = "models/text-embedding-004"
+EMBEDDING_MODEL = "models/gemini-embedding-2-preview"
 
 
 def get_embedding_model():
